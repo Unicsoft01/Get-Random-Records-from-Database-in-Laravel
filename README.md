@@ -7,4 +7,4 @@ This article will teach you how to get random records from the database.
 ## works for Laravel >= 5.2
 
 
-```Post::select('id', 'title' ,'slug')->inRandomOrder()->get();```php
+```Post::select('id', 'title' ,'slug')->inRandomOrder()->get();```
