@@ -8,3 +8,11 @@ This article will teach you how to get random records from the database.
 
 
 ```Post::select('id', 'title' ,'slug')->inRandomOrder()->get();```
+
+Also, If you want to get limited random records then you can use this method to get limited random records.
+
+```// Random Record with a limit```
+```Post::select('id', 'title' ,'slug')->inRandomOrder()->limit(10)->get();```
+
+```// Single Random Record```
+```Post::select('id', 'title' ,'slug')->inRandomOrder()->first();```
